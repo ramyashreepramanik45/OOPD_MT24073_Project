@@ -3,10 +3,10 @@
 
 class Packet {
 private:
-    int size; // Packet size in bytes
+    int size; 
 
 public:
-    Packet(int packetSize = 1024); // Constructor with default size
+    Packet(int packetSize = 1024); 
     int getSize() const;
 };
 

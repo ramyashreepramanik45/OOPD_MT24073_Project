@@ -26,7 +26,7 @@ public:
     WiFi4(FrequencyChannel &channel);
     void runSimulation(int numUsers) override;
 
-    // Getters for metrics
+    
     double getThroughput() const;
     double getAvgLatency() const;
     double getMaxLatency() const;

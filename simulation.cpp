@@ -6,7 +6,7 @@
 #include "Report.h"
 #include <iostream>
 #include <iomanip>
-#include <stdexcept> // For exception handling
+#include <stdexcept> 
 using namespace std;
 
 int main() {
@@ -33,8 +33,8 @@ int main() {
             cin >> choice;
 
             if (cin.fail() || choice < 1 || choice > 9) {
-                cin.clear();                // Clear the input stream
-                cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Discard invalid input
+                cin.clear();                
+                cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
                 throw invalid_argument("Invalid menu choice. Please enter a number between 1 and 9.");
             }
 
